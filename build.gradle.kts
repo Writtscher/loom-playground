@@ -2,8 +2,8 @@ plugins {
     id("java")
 }
 
-group = "org.playground.java21"
-version = "1.0-SNAPSHOT"
+group = "org.playground.loom"
+version = "0.0.1"
 
 repositories {
     mavenCentral()
@@ -20,7 +20,6 @@ dependencies {
 
 tasks {
     withType<JavaCompile> {
-        // Activate Java 21 Preview
         options.compilerArgs.add("--enable-preview")
     }
     test {
